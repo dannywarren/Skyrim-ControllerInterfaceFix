@@ -2,7 +2,7 @@ ControllerInterfaceFix
 
 Allows you to remap controller buttons without breaking the interface menus
 
-version:  1.00
+version:  1.01
 author:   Danny Warren
 email:    danny@dannywarren.com
 
