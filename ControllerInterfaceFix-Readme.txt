@@ -24,8 +24,8 @@ action will also swap the buttons used in the user interface menus.
 
 Not only do the user interface buttons get swapped around, but several actions
 in the menus stop working when remapped.  There are several cases where you are
-unable to accept or cancel menus, you must unplug your controller and take over
-with the mouse.
+unable to accept or cancel menus.  You must unplug your controller and take
+over with the mouse or force quit skyrim.
 
 This fix restores the hardcoded button mappings found in the original skyrim
 release, allowing you to once again remap the in-game actions without breaking
@@ -33,7 +33,7 @@ the user interface menus.
 
 I posted a quick fix for this in the bethesda forums when the 1.2.12.0 patch
 came out.  Unfortunately, the same behavior is present in 1.3.7.0 as well so it
-seems that bethesda is sticking with this behavior.  Might as well make the fix
+looks like bethesda is sticking with this behavior.  Might as well make the fix
 official, too.
 
 Please note that this fix does not change any of the keyboard mappings, it only
@@ -62,6 +62,10 @@ It is located in the skyrim application directory, which on windows xp would
 be found here:
 
   C:\Program Files\steam\steamapps\common\skyrim\Data
+
+Also, please make sure that the above files are copied in to your data folder
+instead of overwriting it.  Several people have had this issue, and I'm not
+sure which archiver they are using that is doing this.
 
 
 --
@@ -131,7 +135,7 @@ in "Skyrim - Interfaces.bsa" as of version 1.3.7.0:
   ---
   > Cancel    !0,Tween Menu,!0,Pause    !0,Tween Menu,!0,Pause    0x2000          0  0  0  0x108
 
-The gamepad.txt file, also in "Skyrim - Interfaces.bsa", explain which hex
+The gamepad.txt file, also in "Skyrim - Interfaces.bsa", explains which hex
 codes correspond to which buttons.  I'll include the contents of that file here
 to help explain the above diff and in case you wish to tweak controlmap.txt
 yourself:
