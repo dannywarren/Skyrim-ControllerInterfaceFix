@@ -81,7 +81,7 @@ skyrim application directory.
 
 So, on windows xp the file would be located here:
 
-  C:\Program Files\steam\steamapps\ControlMap_Custom.txt
+  C:\Program Files\steam\steamapps\common\skyrim\ControlMap_Custom.txt
 
 If you delete this file, you button mappings will be reset and you can remap
 them again as you see fit.
