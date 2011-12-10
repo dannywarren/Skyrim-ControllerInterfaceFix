@@ -172,3 +172,7 @@ CHANGELOG:
   
   * initial release
 
+1.01  2011.12.09
+
+  * fixed typos in readme
+
