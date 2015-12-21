@@ -2,9 +2,11 @@ ControllerInterfaceFix
 
 Allows you to remap controller buttons without breaking the interface menus
 
-version:  1.01
-author:   Danny Warren
-email:    danny@dannywarren.com
+VERSION:  1.01
+AUTHOR:   Danny Warren
+EMAIL:    danny@dannywarren.com
+GITHUB:	  https://github.com/dannywarren/Skyrim-ControllerInterfaceFix
+NEXUS:    http://www.nexusmods.com/skyrim/mods/3180/?
 
 
 --
@@ -94,46 +96,7 @@ controlmap.txt file doesn't have any fallback for tabs as spaces, etc.
 
 --
 
-DIFFS:
-
-Here is a diff of the changes made to controlmap.txt from the stock file found
-in "Skyrim - Interfaces.bsa" as of version 1.3.7.0:
-
-  60,61c60,61
-  < Accept    !0,Activate             !0,Activate             !0,Activate     0  0  0  0x8
-  < Cancel    !0,Tween Menu,!0,Pause  !0,Tween Menu,!0,Pause  !0,Tween Menu   0  0  0  0x8
-  ---
-  > Accept    !0,Activate             !0,Activate             0x1000    0  0  0  0x8
-  > Cancel    !0,Tween Menu,!0,Pause  !0,Tween Menu,!0,Pause  0x2000    0  0  0  0x8
-  
-  85,86c85,86
-  < XButton    !0,Ready Weapon  !0,Ready Weapon   !0,Ready Weapon   0  0  0  0x8
-  < YButton    !0,Toggle POV    !0,Toggle POV     !0,Jump           0  0  0  0x8
-  ---
-  > XButton    !0,Ready Weapon  !0,Ready Weapon   0x4000    0  0  0  0x8
-  > YButton    !0,Toggle POV    !0,Toggle POV     0x8000    0  0  0  0x8
-  
-  101,102c101,102
-  < Accept    !0,Activate                           !0,Activate                           !0,Activate     0  0  0  0x8
-  < Cancel    !0,Favorites,!0,Tween Menu,!0,Pause   !0,Favorites,!0,Tween Menu,!0,Pause   !0,Tween Menu   0  0  0  0x8
-  ---
-  > Accept    !0,Activate                           !0,Activate                           0x1000    0  0  0  0x8
-  > Cancel    !0,Favorites,!0,Tween Menu,!0,Pause   !0,Favorites,!0,Tween Menu,!0,Pause   0x2000    0  0  0  0x8
-  
-  107c107
-  < Cancel        !0,Tween Menu,!0,Pause    !0,Tween Menu,!0,Pause    !0,Tween Menu   0  0  0  0x8
-  ---
-  > Cancel        !0,Tween Menu,!0,Pause    !0,Tween Menu,!0,Pause    0x2000          0  0  0  0x8
-  
-  188c188
-  < Cancel        !0,Tween Menu,!0,Pause    !0,Tween Menu,!0,Pause    !0,Tween Menu   0  0  0  0x8
-  ---
-  > Cancel        !0,Tween Menu,!0,Pause    !0,Tween Menu,!0,Pause    0x2000          0  0  0  0x8
-  
-  191c191
-  < Cancel    !0,Tween Menu,!0,Pause    !0,Tween Menu,!0,Pause    !0,Tween Menu   0  0  0  0x108
-  ---
-  > Cancel    !0,Tween Menu,!0,Pause    !0,Tween Menu,!0,Pause    0x2000          0  0  0  0x108
+NOTES:
 
 The gamepad.txt file, also in "Skyrim - Interfaces.bsa", explains which hex
 codes correspond to which buttons.  I'll include the contents of that file here
