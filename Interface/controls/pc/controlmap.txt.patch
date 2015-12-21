@@ -1,0 +1,51 @@
+--- controlmap.txt.orig	2015-12-21 02:57:41.460184342 -0800
++++ controlmap.txt	2015-12-21 02:44:10.505950547 -0800
+@@ -57,8 +57,8 @@
+ Quick Map			0x32				0xff	0xff				1	1	0	0x908
+ 							
+ // Menu Mode							
+-Accept		!0,Activate				!0,Activate				!0,Activate			0	0	0	0x8
+-Cancel		!0,Tween Menu,!0,Pause	!0,Tween Menu,!0,Pause	!0,Tween Menu			0	0	0	0x8
++Accept		!0,Activate				!0,Activate				0x1000			0	0	0	0x8
++Cancel		!0,Tween Menu,!0,Pause	!0,Tween Menu,!0,Pause	0x2000			0	0	0	0x8
+ Up			!0,Forward				!0,Forward				0x0001			0	0	0	0x8
+ Down		!0,Back					!0,Back					0x0002			0	0	0	0x8
+ Left		!0,Strafe Left			!0,Strafe Left			0x0004			0	0	0	0x8
+@@ -82,8 +82,8 @@
+ RightEquip	!0,Right Attack/Block	!0,Right Attack/Block		!0,Right Attack/Block		0	0	0	0x8	
+ Item Zoom	0x2e					0xff						0x0080						0	0	0	0x8
+ Rotate		0xff					0xff						0x000c						0	0	0	0x8
+-XButton		!0,Ready Weapon			!0,Ready Weapon				!0,Ready Weapon						0	0	0	0x8
+-YButton		!0,Toggle POV			!0,Toggle POV				!0,Jump						0	0	0	0x8
++XButton		!0,Ready Weapon			!0,Ready Weapon				0x4000						0	0	0	0x8
++YButton		!0,Toggle POV			!0,Toggle POV				0x8000						0	0	0	0x8
+ Cursor		0xff					0xa							0xff						0	0	0	0x8
+ 
+ // Inventory
+@@ -98,13 +98,13 @@
+ // Favorites menu
+ Up			!0,Forward								!0,Forward								0x0001			0	0	0	0x8
+ Down		!0,Back									!0,Back									0x0002			0	0	0	0x8
+-Accept		!0,Activate								!0,Activate								!0,Activate			0	0	0	0x8
+-Cancel		!0,Favorites,!0,Tween Menu,!0,Pause		!0,Favorites,!0,Tween Menu,!0,Pause		!0,Tween Menu			0	0	0	0x8
++Accept		!0,Activate								!0,Activate								0x1000			0	0	0	0x8
++Cancel		!0,Favorites,!0,Tween Menu,!0,Pause		!0,Favorites,!0,Tween Menu,!0,Pause		0x2000			0	0	0	0x8
+ Left Stick	0xff									0xff									0x000b			0	0	0	0x8
+ Cursor		0xff									0xa										0xff			0	0	0	0x8
+ 
+ // Map Menu
+-Cancel				!0,Tween Menu,!0,Pause	!0,Tween Menu,!0,Pause	!0,Tween Menu			0	0	0	0x8
++Cancel				!0,Tween Menu,!0,Pause	!0,Tween Menu,!0,Pause	0x2000			0	0	0	0x8
+ Look				0xff					0xff					0x000c			0	0	0	0x8
+ Zoom In				0xff					0x8						0x000a			0	0	0	0x8
+ Zoom Out			0xff					0x9						0x0009			0	0	0	0x8
+@@ -185,7 +185,7 @@
+ RotatePick			0xff													0xa														0x000b			0	0	0	0x8
+ RotateLock			!0,Forward,!0,Back,!0,Strafe Left,!0,Strafe Right		!0,Forward,!0,Back,!0,Strafe Left,!0,Strafe Right		0x000c			0	0	0	0x8
+ DebugMode			0x35													0xff													0x4000			0	0	0	0x8
+-Cancel				!0,Tween Menu,!0,Pause									!0,Tween Menu,!0,Pause									!0,Tween Menu			0	0	0	0x8
++Cancel				!0,Tween Menu,!0,Pause									!0,Tween Menu,!0,Pause									0x2000			0	0	0	0x8
+ 
+ // Favor
+-Cancel		!0,Tween Menu,!0,Pause	!0,Tween Menu,!0,Pause	!0,Tween Menu	0	0	0	0x108
++Cancel		!0,Tween Menu,!0,Pause	!0,Tween Menu,!0,Pause	0x2000	0	0	0	0x108
