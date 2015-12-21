@@ -56,19 +56,6 @@ You should end up with:
   Data\Interface\controls\pc\controlmap.txt
   Data\ControllerInterfaceFix-Readme.txt
 
-Since a lot of people who don't normally mod bethesda games have been applying
-this fix and having trouble, please note that the data folder is *not* located
-in the same location as your save games and configuration files.
-
-It is located in the skyrim application directory, which on windows xp would
-be found here:
-
-  C:\Program Files\steam\steamapps\common\skyrim\Data
-
-Also, please make sure that the above files are copied in to your data folder
-instead of overwriting it.  Several people have had this issue, and I'm not
-sure which archiver they are using that is doing this.
-
 
 --
 
